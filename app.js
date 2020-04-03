@@ -30,15 +30,12 @@ var app = new Vue({
     },
     watch : {
         telefono : function (valor) {
-            console.log(`Valor: ${valor}`);
             if(valor == ''){
                 this.telefono = valor
                 this.numero = valor;
             }else{
                 const re = new RegExp('^[1-9][0-9]*');
                 let result = valor.match(re)
-                console.log('Resultado: ');
-                console.log(result)
                 if(result == null){
                     this.telefono = this.numero
                 }else{
