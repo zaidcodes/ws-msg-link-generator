@@ -9,7 +9,7 @@ var app = new Vue({
     },
     methods:{
         obtenerCodigos(){
-            const f = fetch("/codigosTlf.json").then((result) => {
+            const f = fetch("/assets/json/codigosTlf.json").then((result) => {
                 return result.json()
             }).then((json) =>{
                 this.paises = json;
