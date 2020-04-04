@@ -1,4 +1,4 @@
-[
+var Codigos = [
     {"nombre": "Afganistán", "name": "Afghanistan", "nom": "Afghanistan", "iso2": "AF", "iso3": "AFG", "phone_code": "93"},
     {"nombre": "Albania", "name": "Albania", "nom": "Albanie", "iso2": "AL", "iso3": "ALB", "phone_code": "355"},
     {"nombre": "Alemania", "name": "Germany", "nom": "Allemagne", "iso2": "DE", "iso3": "DEU", "phone_code": "49"},

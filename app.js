@@ -9,14 +9,17 @@ var app = new Vue({
     },
     methods:{
         obtenerCodigos(){
-            const f = fetch("/assets/json/codigos-tlf.json").then((result) => {
-                return result.json()
-            }).then((json) =>{
-                this.paises = json;
-            }).catch((err) => {
-                return []
-            });
-            this.paises = f
+            
+            this.paises = Codigos
+
+            // const f = fetch("/assets/json/codigos-tlf.json").then((result) => {
+            //     return result.json()
+            // }).then((json) =>{
+            //     this.paises = json;
+            // }).catch((err) => {
+            //     return []
+            // });
+            // this.paises = f
         }
     },
     computed: {
